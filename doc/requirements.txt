@@ -1,0 +1,38 @@
+--- OGÓLNE ---
+1. Aplikacja ma składać się z dwóch aktywności: głównej wyświetlającej listę potraw oraz aktywności szczegółów uruchamianej po kliknięciu wybranej potrawy z listy i wyświetlającej co najmniej listę składników oraz sposób przygotowania potrawy
+2. Aplikacja ma korzystać z fragmentów
+3. Aplikacja powinna mieć wersję układu dla smartfonów i osobną dla tabletów
+4. Aplikacja powinna działać poprawnie po zmianie orientacji urządzenia
+5. W aplikacji należy zastosować motywy.
+6. Każda aktywność ma mieć pasek aplikacji w postaci paska narzędzi.
+7 Animacja ma się opierać na systemie animacji właściwości, czyli korzystać z obiektu ObjectAnimator.  Dodanie krótkiej animacji, która będzie się pojawiać w trakcie uruchamiania aplikacji. Animacja powinna być związana tematycznie z realizowanym zadaniem.
+
+--- FRAGMENT SZCZEGÓŁÓW ---
+1. We fragmencie szczegółów należy zagnieździć fragment dynamiczny minutnika
+2. Minutnik ma wyświetlać czas z dokładnością do sekundy
+3. Minutnik powinien działać poprawnie na smartfonach i tabletach
+4. Minutnik powinien działać poprawnie po zmianie orientacji urządzenia
+5. Minutnik powinien mieć przyciski:
+- start - uruchamiający odliczanie,
+- stop - wyłączający odliczanie po dojściu do zera
+- przerwij - wyłączający odliczanie w dowolnym momencie
+6. Osiągnięcie wartości zerowej ma być odpowiednio sygnalizowane. Do wyboru co najmniej jedna z opcji: wizualnie, dźwiękowo, wibracjami.
+7. Ponadto minutnik ma mieć jedną z dwóch funkcji do wyboru:
+- ma automatycznie ustawić pierwszy czas z przepisu, a po odliczeniu tego czasu do końca i reakcji użytkownika automatycznie ustawić kolejny czas z przepisu
+- ma mieć możliwość ustawienia czasu przed uruchomieniem odliczania
+8. Na ekranie szczegółów obrazek ma się pojawić na pasku aplikacji, ale ma się razem z nim zwijać.
+9. Przechodzenie pomiędzy kartami ma się odbywać także za pomocą gestu przeciągnięcia.
+10. Na ekranie szczegółów ma się pojawić przycisk FAB (floating action button), który będzie odpowiedzialny za przesłanie listy składników do innej aplikacji (w uproszczonej wersji działanie przycisku może prowadzić jedynie do wyświetlenia odpowiedniego komunikatu).
+11. Ekran szczegółów ma być przewijany w pionie razem z paskiem aplikacji.
+
+--- FRAGMENT LIST ---
+1. Karty kategorii zamiast listy nazw potraw mają używać widoku RecyclerView z układem siatki (grid), w którym poszczególne pozycje (potrawy) będą prezentowane w postaci obrazka i nazwy, dla których użyto widoku CardView. Kliknięcie wybranej pozycji (potrawy) powoduje wyświetlenie szczegółów, czyli nazwy potrawy, większego obrazka, listy składników i sposobu przygotowania.
+
+--- SPRAWOZDANIE ---
+1. Archiwum z kodami źródłowymi projektu
+2. Film pokazujący działanie aplikacji, powinien on uwzględniać wszystkie wymagania minimalne i dodatkowe, które zostały zrealizowane w tej aplikacji i da się je pokazać w ten sposób, dotyczy to również wersji na tablety
+3. Sprawozdanie przedstawiające jak aplikacja jest skonstruowana i jak zostały zaimplementowane poszczególne wymagania, może być ono skonstruowane na zasadzie - krótki opis danej funkcjonalności i sposobu jej implementacji potwierdzony odpowiednimi fragmentami kodu z właściwych plików, a w przypadku efektu wizualnego również zrzutem ekranu pokazującego tę wizualną cechę.
+
+
+
+
